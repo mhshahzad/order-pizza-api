@@ -1,0 +1,46 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our server code
+  version: "1.0"
+  title: Pizza Order API
+consumes:
+  - application/json
+produces:
+  - application/json
+
+basePath: /api
+
+# Paths supported by the server application
+paths:
+  /orders:
+    get:
+      operationId: order.read_all
+      tags:
+        - Orders
+      summary: Return list of Pizza orders
+      description: Read the entire set of orders, sorted by timestamp.
+      responses:
+        200:
+          description: Successfully read orders set operation
+          schema:
+            type: array
+            items:
+              properties:
+                order_id:
+                  type: integer
+                  description: Id of the order
+                flavor:
+                  type: string
+                  description: Flavor of the pizza
+                topping:
+                  type: string
+                  description: Topping for the pizza
+                crust:
+                  type: string
+                  description: Crust for the pizza
+                size:
+                  type: string
+                  description: Size of the pizza
+                timestamp:
+                  type: string
+                  description: Creation/Update timestamp of the order
