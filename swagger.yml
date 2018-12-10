@@ -14,7 +14,7 @@ basePath: /api
 paths:
   /orders:
     get:
-      operationId: order.read_all
+      operationId: orders.read_all
       tags:
         - Orders
       summary: Return list of Pizza orders
@@ -32,9 +32,6 @@ paths:
                 flavor:
                   type: string
                   description: Flavor of the pizza
-                topping:
-                  type: string
-                  description: Topping for the pizza
                 crust:
                   type: string
                   description: Crust for the pizza

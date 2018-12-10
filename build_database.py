@@ -1,28 +1,38 @@
 import os
 from config import db
-from models import Person
+from models import Orders
 
 # Data to initialize database with
-PEOPLE = [
+ORDERS = [
     {
-        "flavor": "Doug",
-        "topping": "Farrell",
-        "cr":""
+        "Flavor": "BEEF-NORMAL",
+        "Crust":"NORMAL",
+        "Size":"M"
     },
-    {"fname": "Kent", "lname": "Brockman"},
-    {"fname": "Bunny", "lname": "Easter"},
+    {
+        "Flavor": "CHEESE",
+        "Crust":"NORMAL",
+        "Size":"S"
+    },
+    {
+        "Flavor": "CHICKEN-FAJITA",
+        "Crust":"NORMAL",
+        "Size":"L"
+    },
+
 ]
 
 # Delete database file if it exists currently
-if os.path.exists("people.db"):
-    os.remove("people.db")
+if os.path.exists("orders.db"):
+    os.remove("orders.db")
 
 # Create the database
 db.create_all()
 
 # iterate over the PEOPLE structure and populate the database
-for person in PEOPLE:
-    p = Person(lname=person.get("lname"), fname=person.get("fname"))
+for pizza in ORDERS:
+    p = Orders(flavor=orders.get("flavor"),
+    crust=orders.get("crust"), size=orders.get("size"))
     db.session.add(p)
 
 db.session.commit()
