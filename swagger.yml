@@ -26,18 +26,18 @@ paths:
             type: array
             items:
               properties:
-                order_id:
+                Order_ID:
                   type: integer
                   description: Id of the order
-                flavor:
+                Flavor:
                   type: string
                   description: Flavor of the pizza
-                crust:
+                Crust:
                   type: string
                   description: Crust for the pizza
-                size:
+                Size:
                   type: string
                   description: Size of the pizza
-                timestamp:
+                Timestamp:
                   type: string
                   description: Creation/Update timestamp of the order

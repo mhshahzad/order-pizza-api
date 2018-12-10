@@ -4,11 +4,11 @@ from config import db, ma
 
 class Orders(db.Model):
     __tablename__ = "orders"
-    order_id = db.Column(db.Integer, primary_key=True)
-    flavor = db.Column(db.String(32))
-    crust = db.Column(db.String(32))
-    size = db.Column(db.String(32))
-    timestamp = db.Column(
+    Order_ID = db.Column(db.Integer, primary_key=True)
+    Flavor = db.Column(db.String(32))
+    Crust = db.Column(db.String(32))
+    Size = db.Column(db.String(32))
+    Timestamp = db.Column(
         db.DateTime, default=datetime.utcnow,
         onupdate=datetime.utcnow
     )
@@ -17,4 +17,5 @@ class Orders(db.Model):
 class OrderSchema(ma.ModelSchema):
     class Meta:
         model = Orders
+        ordered = True
 sqla_session = db.session

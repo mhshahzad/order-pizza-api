@@ -31,8 +31,8 @@ db.create_all()
 
 # iterate over the PEOPLE structure and populate the database
 for pizza in ORDERS:
-    p = Orders(flavor=orders.get("flavor"),
-    crust=orders.get("crust"), size=orders.get("size"))
+    p = Orders(flavor=pizza.get("Flavor"),
+    crust=pizza.get("Crust"), size=pizza.get("Size"))
     db.session.add(p)
 
 db.session.commit()
