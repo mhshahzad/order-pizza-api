@@ -1,8 +1,8 @@
 swagger: "2.0"
 info:
-  description: This is the swagger file that goes with our server code
+  description: A REST-ful API for pizza ordering.
   version: "1.0"
-  title: Pizza Order API
+  title: Order Pizza API
 consumes:
   - application/json
 produces:
