@@ -1,6 +1,6 @@
 ## Order Pizza API
 
-A Rest-ful API for pizza ordering.
+A Rest-ful API for pizza ordering with documentation.
 
 ### Getting Started
 
@@ -19,6 +19,8 @@ _Through your terminal/command prompt_
 `python server.py`
 
 Try it by entering in your browser: `localhost:5000/api/orders`
+
+To read the documentation: `localhost:5000/api/ui`
 
 ### Implementation
 
