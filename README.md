@@ -1,6 +1,8 @@
 ## Order Pizza API
 
-A Rest-ful API for pizza ordering with documentation.
+A Rest-ful API for pizza ordering.
+
+This API can be integrated in POS (point-of-sale) system of pizza restaurant.
 
 ### Getting Started
 
@@ -8,8 +10,8 @@ _Through your terminal/command prompt:_
 
 1. Clone this repository
 
-`git clone https://github.com/muhammadh-s/pizza_order-RESTful-API.git` 
- 
+`git clone https://github.com/muhammadh-s/pizza_order-RESTful-API.git`
+
 2. Install dependencies
 
 `pip install -r requirments.txt`
@@ -24,5 +26,5 @@ To read the documentation: `localhost:5000/api/ui`
 
 ### Implementation
 
-This application is built using Flask, connexion, marshmallow and 
+This application is built using Flask, connexion, marshmallow and
 SQLAlchemy, hence uses Python-3.7.1

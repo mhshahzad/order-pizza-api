@@ -26,6 +26,9 @@ paths:
             type: array
             items:
               properties:
+                Table_No:
+                  type: integer
+                  description: Customer's table number 
                 Order_ID:
                   type: integer
                   description: Id of the order
