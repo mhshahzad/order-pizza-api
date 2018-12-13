@@ -14,7 +14,7 @@ _Through your terminal/command prompt:_
 
 2. Install dependencies
 
-`pip install -r requirments.txt`
+`pip install -r requirements.txt`
 
 3. Finally, start the app
 
@@ -26,5 +26,7 @@ To read the documentation: `localhost:5000/api/ui`
 
 ### Implementation
 
-This application is built using Flask, connexion, marshmallow and
+This application is built using: Flask, connexion, marshmallow and
 SQLAlchemy, hence uses Python-3.7.1
+
+Tested through: Postman

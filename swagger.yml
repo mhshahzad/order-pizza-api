@@ -28,7 +28,7 @@ paths:
               properties:
                 Table_No:
                   type: integer
-                  description: Customer's table number 
+                  description: Customer's table number
                 Order_ID:
                   type: integer
                   description: Id of the order
@@ -44,3 +44,53 @@ paths:
                 Timestamp:
                   type: string
                   description: Creation/Update timestamp of the order
+
+    post:
+      operationId: orders.create
+      tags:
+        - Orders
+      summary: Create an order
+      description: Create a new person
+      parameters:
+        - name: order
+          in: body
+          description: Order to create
+          required: True
+          schema:
+            type: object
+            properties:
+              Table_No:
+                type: integer
+                description: Customer's table number
+              Flavor:
+                type: string
+                description: Flavor of the pizza
+              Crust:
+                type: string
+                description: Crust for the pizza
+              Size:
+                type: string
+                description: Size of the pizza
+      responses:
+        201:
+          description: Successfully created order
+          schema:
+            properties:
+              Table_No:
+                type: integer
+                description: Customer's table number
+              Order_ID:
+                type: integer
+                description: Id of the order
+              Flavor:
+                type: string
+                description: Flavor of the pizza
+              Crust:
+                type: string
+                description: Crust for the pizza
+              Size:
+                type: string
+                description: Size of the pizza
+              Timestamp:
+                type: string
+                description: Creation/Update timestamp of the order
