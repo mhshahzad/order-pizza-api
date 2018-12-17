@@ -2,7 +2,10 @@
 
 A Rest-ful API for pizza ordering.
 
-This API can be integrated in POS (point-of-sale) system of pizza restaurant.
+This API can be integrated as Back-end in POS (point-of-sale) terminal 
+of pizza restaurant.
+
+GET, POST and DELETE methods can be used on list of orders.
 
 ### Getting Started
 
@@ -20,7 +23,7 @@ _Through your terminal/command prompt:_
 
 `python server.py`
 
-Try it in your browser: `localhost:5000/api/orders`
+Try GET method in your browser: `localhost:5000/api/orders` 
 
 To read the documentation: `localhost:5000/api/ui`
 
