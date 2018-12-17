@@ -94,3 +94,20 @@ paths:
               Timestamp:
                 type: string
                 description: Creation/Update timestamp of the order
+
+  /orders/{Order_ID}:
+        delete:
+              operationId: orders.delete
+              tags:
+                - Order
+              summary: Delete an order from the orders list
+              description: Delete an order
+              parameters:
+                - name: Order_ID
+                  in: path
+                  type: integer
+                  description: ID of order to delete
+                  required: true
+              responses:
+                200:
+                  description: Successfully deleted an order

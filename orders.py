@@ -62,3 +62,27 @@ def create(order):
                 table_no=table_no
             ),
 )
+
+def delete(Order_ID):
+    """
+    This function deletes an order from the orders structure
+    :param Order_ID:   Id of the order to delete
+    :return:            200 on successful delete, 404 if not found
+    """
+    # Get the order requested
+    order = Orders.query.filter(Orders.Order_ID == Order_ID).one_or_none()
+
+    # Did we find an order?
+    if order is not None:
+        db.session.delete(order)
+        db.session.commit()
+        return make_response(
+            "Order {Order_ID} deleted".format(Order_ID=Order_ID), 200
+        )
+
+    # Otherwise
+    else:
+        abort(
+            404,
+            "Order not found for ID: {order_id}".format(Order_ID=Order_ID),
+)
