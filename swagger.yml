@@ -99,7 +99,7 @@ paths:
         delete:
               operationId: orders.delete
               tags:
-                - Order
+                - Orders
               summary: Delete an order from the orders list
               description: Delete an order
               parameters:
@@ -111,3 +111,33 @@ paths:
               responses:
                 200:
                   description: Successfully deleted an order
+
+  /auth:
+        post:
+          operationId: auth.login
+          tags:
+            - Auth
+          summary: Create an access token
+          description: Create an access token for user to login
+          parameters:
+            - name: auth
+              in: body
+              description: token to create
+              required: True
+              schema:
+                type: object
+                properties:
+                  username:
+                    type: string
+                    description: username of user
+                  password:
+                    type: string
+                    description: password of user
+          responses:
+            201:
+              description: Successfully created token
+              schema:
+                properties:
+                  access_token:
+                    type: string
+                    description: access token
