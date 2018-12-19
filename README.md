@@ -1,15 +1,17 @@
-<p align= "center">![GET method](rest-api-min.png)</p>
+<div style="text-align:center">
+<img src ="rest-api-min.png"/>
+</div>
 
 ## Order Pizza API
 
 A Rest-ful API for pizza ordering.
 
-This API can be integrated as Back-end in POS (point-of-sale) terminal 
+This API can be integrated as Back-end in POS (point-of-sale) terminal
 of pizza restaurant.
 
 GET, POST and DELETE methods can be used on list of orders.
 
-Authentication is implemented on endpoints through JWT. 
+Authentication is implemented on endpoints through JWT.
 
 ### Getting Started
 
@@ -36,7 +38,7 @@ _Through your terminal/command prompt:_
 `/orders` POST method, to add an order </br>
 `/orders/{Order_ID}` DELETE method, to delete an order through Order ID
 
-`/ui` renders a documentation webpage 
+`/ui` renders a documentation webpage
 
 ### Implementation
 
