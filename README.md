@@ -1,4 +1,4 @@
-![GET method](rest-api-min.png)
+<p align= "center">![GET method](rest-api-min.png)</p>
 
 ## Order Pizza API
 
