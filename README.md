@@ -7,6 +7,8 @@ of pizza restaurant.
 
 GET, POST and DELETE methods can be used on list of orders.
 
+Authentication is implemented on endpoints through JWT. 
+
 ### Getting Started
 
 _Through your terminal/command prompt:_
@@ -23,9 +25,16 @@ _Through your terminal/command prompt:_
 
 `python server.py`
 
-Try GET method in your browser: `localhost:5000/api/orders` 
+#### Endpoints
 
-To read the documentation: `localhost:5000/api/ui`
+`/api` Basepath
+
+`/auth` POST method, returns an access token
+`/orders` GET method, returns list of orders
+`/orders` POST method, to add an order
+`/orders/{Order_ID}` DELETE method, to delete an order through Order ID
+
+`/ui` renders a documentation webpage 
 
 ### Implementation
 
