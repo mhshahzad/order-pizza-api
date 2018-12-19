@@ -1,3 +1,5 @@
+![GET method](rest-api-min.png)
+
 ## Order Pizza API
 
 A Rest-ful API for pizza ordering.
