@@ -1,6 +1,6 @@
-<div style="text-align:center">
-<img src ="rest-api-min.png"/>
-</div>
+<p align="center">
+<img width="500" height="200" src="rest-api-min.png"/>
+</p>
 
 ## Order Pizza API
 
@@ -33,9 +33,12 @@ _Through your terminal/command prompt:_
 
 `/api` Basepath
 
-`/auth` POST method, returns an access token </br>
-`/orders` GET method, returns list of orders </br>
-`/orders` POST method, to add an order </br>
+`/auth` POST method, returns an access token
+
+`/orders` GET method, returns list of orders
+
+`/orders` POST method, to add an order
+
 `/orders/{Order_ID}` DELETE method, to delete an order through Order ID
 
 `/ui` renders a documentation webpage
