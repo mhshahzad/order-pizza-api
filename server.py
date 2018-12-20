@@ -11,4 +11,5 @@ connex_app = config.connex_app
 connex_app.add_api("swagger.yml")
 
 if __name__ == "__main__":
-    connex_app.run(debug=False)
+    port = int(os.environ.get('PORT', 5000))
+    connex_app.run(host='0.0.0.0', port=port, debug=False)
