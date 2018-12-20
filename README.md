@@ -3,6 +3,7 @@
 <img width="500" height="auto" src="rest-api-min.png"/>
 </p>
 
+
 This API can be integrated as Back-end in POS (point-of-sale) terminal
 of pizza restaurant.
 
