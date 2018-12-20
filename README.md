@@ -1,10 +1,8 @@
 <p align="center">
+# Order Pizza API
+
 <img width="500" height="auto" src="rest-api-min.png"/>
 </p>
-
-## Order Pizza API
-
-A Rest-ful API for pizza ordering.
 
 This API can be integrated as Back-end in POS (point-of-sale) terminal
 of pizza restaurant.
