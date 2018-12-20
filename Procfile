@@ -1,1 +1,1 @@
-web: tornado server:connex_app.run
+web: python server.py
