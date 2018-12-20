@@ -1,6 +1,5 @@
 <p align="center">
-# Order Pizza API
-
+<h1><b>Order Pizza API</b></h1>
 <img width="500" height="auto" src="rest-api-min.png"/>
 </p>
 
