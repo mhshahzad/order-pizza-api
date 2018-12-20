@@ -1,1 +1,1 @@
-web: gunicorn server:connex_app.run
+web: gunicorn server:run
