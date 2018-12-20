@@ -4,4 +4,4 @@ flask-marshmallow==0.9.0
 marshmallow-sqlalchemy
 flask_jwt_extended
 Flask-SQLAlchemy==2.3.2
-tornado
+uwsgi
