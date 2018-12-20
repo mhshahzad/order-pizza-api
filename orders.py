@@ -3,7 +3,7 @@ from config import db
 from models import Orders, OrderSchema
 from flask_jwt_extended import jwt_required
 
-@jwt_required
+
 def read_all():
     """
     This function responds to a request for /api/orders
