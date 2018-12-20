@@ -3,6 +3,7 @@ Main module of the server file
 """
 # local modules
 import config
+import os
 
 # Get the application instance
 connex_app = config.connex_app
