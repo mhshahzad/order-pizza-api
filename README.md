@@ -4,7 +4,7 @@
 </p>
 
 
-This API can be integrated as Back-end in POS (point-of-sale) terminal
+This API can be used as back-end on POS (point-of-sale) terminal
 of pizza restaurant.
 
 GET, POST and DELETE methods can be used on list of orders.
