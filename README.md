@@ -4,13 +4,10 @@
 <img width="500" height="auto" src="rest-api-min.png"/>
 </p>
 
-
+<p align="center">
 This API can be used as back-end on POS (point-of-sale) terminal
 of pizza restaurant.
-
-GET, POST and DELETE methods can be used on list of orders.
-
-Authentication is also implemented on endpoints through JWT.
+</p>
 
 ### Getting Started
 <hr>
