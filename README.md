@@ -8,9 +8,9 @@
 This API can be used as back-end on POS (point-of-sale) terminal
 of pizza restaurant.
 </p>
+<hr>
 
 ### Getting Started
-<hr>
 
 _Through your terminal/command prompt:_
 
@@ -26,7 +26,7 @@ _Through your terminal/command prompt:_
 
 `python server.py`
 
-#### Endpoints
+#### Endpoints:
 
 `/api` Basepath
 
@@ -41,7 +41,6 @@ _Through your terminal/command prompt:_
 `/ui` renders a documentation webpage
 
 ### Implementation
-<hr>
 
 This application is built using: Flask, connexion, marshmallow and
 SQLAlchemy, hence uses Python-3.7.1
