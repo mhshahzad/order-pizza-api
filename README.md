@@ -1,5 +1,6 @@
+<h2 align="center">
+<b> Order Pizza API</b></h1>
 <p align="center">
-<h2><b>Order Pizza API</b></h2>
 <img width="500" height="auto" src="rest-api-min.png"/>
 </p>
 
@@ -9,9 +10,10 @@ of pizza restaurant.
 
 GET, POST and DELETE methods can be used on list of orders.
 
-Authentication is implemented on endpoints through JWT.
+Authentication is also implemented on endpoints through JWT.
 
 ### Getting Started
+<hr>
 
 _Through your terminal/command prompt:_
 
@@ -42,6 +44,7 @@ _Through your terminal/command prompt:_
 `/ui` renders a documentation webpage
 
 ### Implementation
+<hr>
 
 This application is built using: Flask, connexion, marshmallow and
 SQLAlchemy, hence uses Python-3.7.1
