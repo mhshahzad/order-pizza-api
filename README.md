@@ -1,7 +1,7 @@
 <h2 align="center">
 <b> Order Pizza API</b></h1>
 <p align="center">
-<img width="500" height="auto" src="rest-api-min.png"/>
+<img width="500" height="auto" src="rest-api-min.png" alt="GET method"/>
 </p>
 
 <p align="center">
