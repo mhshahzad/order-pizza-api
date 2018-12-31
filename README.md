@@ -1,15 +1,14 @@
+<h2 align="center">
+<b> Order Pizza API</b></h1>
 <p align="center">
-<h2><b>Order Pizza API</b></h2>
 <img width="500" height="auto" src="rest-api-min.png"/>
 </p>
 
-
-This API can be integrated as Back-end in POS (point-of-sale) terminal
+<p align="center">
+This API can be used as back-end on POS (point-of-sale) terminal
 of pizza restaurant.
-
-GET, POST and DELETE methods can be used on list of orders.
-
-Authentication is implemented on endpoints through JWT.
+</p>
+<hr>
 
 ### Getting Started
 
@@ -27,7 +26,7 @@ _Through your terminal/command prompt:_
 
 `python server.py`
 
-#### Endpoints
+#### Endpoints:
 
 `/api` Basepath
 
