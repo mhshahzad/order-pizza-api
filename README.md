@@ -1,5 +1,5 @@
 <h2 align="center">
-<b> Order Pizza API</b></h1>
+<b> Order Pizza API</b></h2>
 <p align="center">
 <img width="500" height="auto" src="rest-api-min.png" alt="GET method"/>
 </p>
