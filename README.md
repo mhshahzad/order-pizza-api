@@ -1,4 +1,4 @@
-<img src="logo.png" alt="drawing" width="200"/>
+<img src="images/logo.png" alt="drawing" width="200"/>
 
 # Order Pizza API
 > A RESTful API as pizza restaurant ordering system.
@@ -17,7 +17,8 @@ Built with (but not limited to) :
 
 1. `git clone https://github.com/muhammadh-s/order-pizza-API`
 2. `cd order-pizza-api`
-3. `pip install -r requirements.txt` _or place virtual environment and then install_
+3. `pip install -r requirements.txt` 
+   _or place virtual environment and then install_
 4. `python server.py`
 
 or visit : <https://order-pizza-api.herokuapp.com/>
@@ -30,19 +31,19 @@ Documentation : <https://order-pizza-api.herokuapp.com/ui>
 
 * POST : `/auth`    
   
-![](auth.png?raw=true)
+![](images/auth.PNG?raw=true)
 
 * GET : `/orders`
 
-![](screenshot.png?raw=true)
+![](images/screenshot.PNG?raw=true)
 
 * POST : `/orders`  (_Access Token is required_)
 
-![](post.png?raw=true)
+![](images/post.PNG?raw=true)
 
 * DELETE : `/order/{Order_ID}`
 
-![](del.png?raw=true)
+![](images/del.PNG?raw=true)
 
 ## License
 MIT
