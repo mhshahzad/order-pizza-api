@@ -1,7 +1,8 @@
+<img src="logo.png" alt="drawing" width="200"/>
+
 # Order Pizza API
 > A RESTful API as pizza restaurant ordering system.
 
-![logo|100x100](logo.png?raw=true)
 
 Built with (but not limited to) :
    * [connexion](https://github.com/zalando/connexion)
