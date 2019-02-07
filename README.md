@@ -15,7 +15,7 @@ Built with (but not limited to) :
 
 ## Setup
 
-1. `git clone https://github.com/muhammadh-s/order-pizza-API`
+1. `git clone https://github.com/muhammadh-s/order-pizza-api`
 2. `cd order-pizza-api`
 3. `pip install -r requirements.txt` 
    _or place virtual environment and then install_
