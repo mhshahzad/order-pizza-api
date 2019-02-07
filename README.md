@@ -1,48 +1,47 @@
-<h2 align="center">
-<b> Order Pizza API</b></h2>
-<p align="center">
-<img width="500" height="auto" src="rest-api-min.png" alt="GET method"/>
-</p>
+# Order Pizza API
+> A RESTful API as pizza restaurant ordering system.
 
-<p align="center">
-This API can be used as back-end on POS (point-of-sale) terminal
-of pizza restaurant.
-</p>
-<hr>
+![logo|100x100](logo.png?raw=true)
 
-### Getting Started
+Built with (but not limited to) :
+   * [connexion](https://github.com/zalando/connexion)
+   * [Flask](https://github.com/pallets/flask)
+   * [flask-marshmallow](https://github.com/marshmallow-code/flask-marshmallow)
+   * [marshmallow-sqlalchemy](https://github.com/marshmallow-code/marshmallow-sqlalchemy)
+   * [flask_jwt_extended](https://github.com/vimalloc/flask-jwt-extended)
+   * [Flask-SQLAlchemy](https://github.com/pallets/flask-sqlalchemy)
+   * [tornado](https://github.com/tornadoweb/tornado)
 
-_Through your terminal/command prompt:_
+## Setup
 
-1. Clone this repository
+1. `git clone https://github.com/muhammadh-s/order-pizza-API`
+2. `cd order-pizza-api`
+3. `pip install -r requirements.txt` _or place virtual environment and then install_
+4. `python server.py`
 
-`git clone https://github.com/muhammadh-s/pizza_order-RESTful-API.git`
+or visit : <https://order-pizza-api.herokuapp.com/>
 
-2. Install dependencies
+Documentation : <https://order-pizza-api.herokuapp.com/ui>
 
-`pip install -r requirements.txt`
+### Endpoints :
 
-3. Finally, start the app
+* Base Path : `/api`
 
-`python server.py`
+* POST : `/auth`    
+  
+![](auth.png?raw=true)
 
-#### Endpoints:
+* GET : `/orders`
 
-`/api` Basepath
+![](screenshot.png?raw=true)
 
-`/auth` POST method, returns an access token
+* POST : `/orders`  (_Access Token is required_)
 
-`/orders` GET method, returns list of orders
+![](post.png?raw=true)
 
-`/orders` POST method, to add an order
+* DELETE : `/order/{Order_ID}`
 
-`/orders/{Order_ID}` DELETE method, to delete an order through Order ID
+![](del.png?raw=true)
 
-`/ui` renders a documentation webpage
-
-### Implementation
-
-This application is built using: Flask, connexion, marshmallow and
-SQLAlchemy, hence uses Python-3.7.1
-
-Tested through: Postman
+## License
+MIT
