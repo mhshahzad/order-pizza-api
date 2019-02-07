@@ -8,8 +8,9 @@ import os
 # Get the application instance
 connex_app = config.connex_app
 
-# Read the swagger.yml file to configure the endpoints
+# # Read the swagger.yml file to configure the endpoints
 connex_app.add_api("swagger.yml")
+
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))

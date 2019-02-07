@@ -23,7 +23,7 @@ Built with (but not limited to) :
 
 or visit : <https://order-pizza-api.herokuapp.com/>
 
-Documentation : <https://order-pizza-api.herokuapp.com/ui>
+Documentation : <https://order-pizza-api.herokuapp.com/api/ui>
 
 ### Endpoints :
 
