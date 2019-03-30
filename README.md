@@ -1,6 +1,6 @@
 <img src="images/logo.png" alt="logo" width="200"/>
 
-# Order Pizza API
+# Order Pizza REST API
 > A RESTful API as pizza restaurant ordering system.
 
 
