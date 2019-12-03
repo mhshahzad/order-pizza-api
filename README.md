@@ -1,7 +1,6 @@
 <p align="center"><img alt= "logo" src="images/logo.png" width="200"></p>
 <h1 align="center">Order Pizza REST API</h1>
-
-> A RESTful API as pizza restaurant ordering system.
+<h3 align="center">A RESTful API as pizza restaurant ordering system.</h3>
 
 <h3 align="center">
 <a href="https://order-pizza-api.herokuapp.com/api/ui">Documentation </a>
@@ -88,7 +87,7 @@ curl
     "Flavor": "ABC", 
     "Crust": "XYZ",
     "Size": "XL", 
-    "Table_No: 9"
+    "Table_No": 9
   }' 
   https://order-pizza-api.herokuapp.com/api/orders
   ```
