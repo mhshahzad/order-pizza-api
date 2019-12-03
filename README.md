@@ -1,17 +1,16 @@
 <p align="center"><img alt= "logo" src="images/logo.png" width="200"></p>
 <h1 align="center">Order Pizza REST API</h1>
 
+> A RESTful API as pizza restaurant ordering system.
 
 <h3 align="center">
-<a href="https://order-pizza-api.herokuapp.com/api/ui">Documenation </a>
-<br/>
+<a href="https://order-pizza-api.herokuapp.com/api/ui">Documentation </a>
+</br>
+</br>
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/060895f2f997c9d08e1d#?env%5Bserver%5D=W3sia2V5IjoidXJsIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfV0=)
 
 </h1>
-
-> A RESTful API as pizza restaurant ordering system.
-
 
 Built with (but not limited to) :
    * [connexion](https://github.com/zalando/connexion)
@@ -21,6 +20,7 @@ Built with (but not limited to) :
    * [flask_jwt_extended](https://github.com/vimalloc/flask-jwt-extended)
    * [Flask-SQLAlchemy](https://github.com/pallets/flask-sqlalchemy)
    * [tornado](https://github.com/tornadoweb/tornado)
+
 
 ## Setup
 
@@ -66,6 +66,9 @@ curl -s https://order-pizza-api.herokuapp.com/api/orders
   }
 ]
 ```
+
+**Endpoints**
+
 
 * POST : `/auth`    
 
