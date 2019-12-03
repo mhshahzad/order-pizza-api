@@ -15,7 +15,7 @@ def read_all():
 
     # Serialize the data for the response
     order_schema = OrderSchema(many=True)
-    data = order_schema.dump(orders).data
+    data = order_schema.dump(orders)
     return data
 
 @jwt_required
@@ -44,14 +44,14 @@ def create(order):
 
         # Create an order instance using the schema and the passed in order
         schema = OrderSchema()
-        new_order = schema.load(order, session=db.session).data
+        new_order = schema.load(order, session=db.session)
 
         # Add the order to the database
         db.session.add(new_order)
         db.session.commit()
 
         # Serialize and return the newly created order in the response
-        data = schema.dump(new_order).data
+        data = schema.dump(new_order)
 
         return data, 201
 
@@ -78,12 +78,12 @@ def delete(Order_ID):
         db.session.delete(order)
         db.session.commit()
         return make_response(
-            "Order {Order_ID} deleted".format(Order_ID=Order_ID), 200
+            {"message": "Order deleted"}, 200
         )
 
     # Otherwise
     else:
         abort(
             404,
-            "Order not found for ID: {order_id}".format(Order_ID=Order_ID),
+            "Order not found for ID: {Order_ID}".format(Order_ID=Order_ID),
 )
