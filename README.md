@@ -1,5 +1,5 @@
 <p align="center"><img alt= "logo" src="images/logo.png" width="200"></p>
-<h1 align="center">Order Pizza REST API</h1>
+<h1 align="center">Order Pizza API</h1>
 <h3 align="center">A RESTful API as pizza restaurant ordering system.</h3>
 
 <h3 align="center">
