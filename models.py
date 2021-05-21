@@ -1,7 +1,6 @@
 from datetime import datetime
 from config import db, ma
 
-
 class Orders(db.Model):
     __tablename__ = "orders"
     Table_No = db.Column(db.Integer)
@@ -15,7 +14,8 @@ class Orders(db.Model):
     )
 
 
-class OrderSchema(ma.ModelSchema):
+# class OrderSchema(ma.ModelSchema):
+class OrderSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
         model = Orders
         ordered = True

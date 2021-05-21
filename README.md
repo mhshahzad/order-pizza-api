@@ -7,23 +7,9 @@
 </br>
 </br>
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/060895f2f997c9d08e1d#?env%5Bserver%5D=W3sia2V5IjoidXJsIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfV0=)
-
-</h1>
-
-Built with (but not limited to) :
-   * [connexion](https://github.com/zalando/connexion)
-   * [Flask](https://github.com/pallets/flask)
-   * [flask-marshmallow](https://github.com/marshmallow-code/flask-marshmallow)
-   * [marshmallow-sqlalchemy](https://github.com/marshmallow-code/marshmallow-sqlalchemy)
-   * [flask_jwt_extended](https://github.com/vimalloc/flask-jwt-extended)
-   * [Flask-SQLAlchemy](https://github.com/pallets/flask-sqlalchemy)
-   * [tornado](https://github.com/tornadoweb/tornado)
-
-
 ## Setup
 
-1. `git clone https://github.com/muhammadh-s/order-pizza-api`
+1. `git clone https://github.com/NavGitGood/order-pizza-api.git`
 2. `cd order-pizza-api`
 3. `pip install -r requirements.txt` 
    _or place virtual environment and then install_
@@ -41,7 +27,7 @@ curl -s https://order-pizza-api.herokuapp.com/api/orders
 [
   {
     "Crust": "NORMAL",
-    "Flavor": "BEEF-NORMAL",
+    "Flavor": "VEGGI",
     "Order_ID": 1,
     "Size": "M",
     "Table_No": 1,
