@@ -3,7 +3,7 @@
 <h3 align="center">A RESTful API as pizza restaurant ordering system.</h3>
 
 <h3 align="center">
-<a href="https://order-pizza-api.herokuapp.com/api/ui">Documentation </a>
+<a href="https://order-pizza-api-python3-7.herokuapp.com/api/ui">Documentation </a>
 </br>
 </br>
 
@@ -20,7 +20,7 @@
 **Example Response**
 
 ```bash
-curl -s https://order-pizza-api.herokuapp.com/api/orders
+curl -s https://order-pizza-api-python3-7.herokuapp.com/api/orders
 ```
 
 ```json
@@ -58,7 +58,7 @@ curl -s https://order-pizza-api.herokuapp.com/api/orders
 * POST : `/auth`    
 
 ```bash
-  curl -X POST -H "Content-Type: application/json" -d '{"username": "test", "password": "test"}'  https://order-pizza-api.herokuapp.com/api/auth
+  curl -X POST -H "Content-Type: application/json" -d '{"username": "test", "password": "test"}'  https://order-pizza-api-python3-7i.herokuapp.com/api/auth
 ```
 
 * POST : `/orders`  (_Access Token is required_)
@@ -75,7 +75,7 @@ curl
     "Size": "XL", 
     "Table_No": 9
   }' 
-  https://order-pizza-api.herokuapp.com/api/orders
+  https://order-pizza-api-python3-7.herokuapp.com/api/orders
   ```
 `Do replace the <JWT> in the above request with the token you have acquired.`
 
@@ -83,7 +83,7 @@ curl
 * DELETE : `/orders/{Order_ID}`
 
 ```bash
-curl -X DELETE https://order-pizza-api.herokuapp.com/api/orders/1
+curl -X DELETE https://order-pizza-api-python3-7.herokuapp.com/api/orders/1
 ```
 
 ## License
