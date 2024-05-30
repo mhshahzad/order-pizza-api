@@ -1,0 +1,149 @@
+openapi: 3.0.1
+info:
+  title: Order Pizza API
+  description: A REST-ful API for pizza ordering.
+  version: "1.0"
+servers:
+  - url: /api
+paths:
+  /orders:
+    get:
+      tags:
+        - Orders
+      summary: Return list of Pizza orders
+      description: "Read the entire set of orders, sorted by timestamp."
+      operationId: orders.read_all
+      responses:
+        "200":
+          description: Successfully read orders set operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    Table_No:
+                      type: integer
+                      description: Customer's table number
+                    Order_ID:
+                      type: integer
+                      description: Id of the order
+                    Flavor:
+                      type: string
+                      description: Flavor of the pizza
+                    Crust:
+                      type: string
+                      description: Crust for the pizza
+                    Size:
+                      type: string
+                      description: Size of the pizza
+                    Timestamp:
+                      type: string
+                      description: Creation/Update timestamp of the order
+    post:
+      tags:
+        - Orders
+      summary: Create an order
+      description: Create a new person
+      operationId: orders.create
+      requestBody:
+        description: Order to create
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                Table_No:
+                  type: integer
+                  description: Customer's table number
+                Flavor:
+                  type: string
+                  description: Flavor of the pizza
+                Crust:
+                  type: string
+                  description: Crust for the pizza
+                Size:
+                  type: string
+                  description: Size of the pizza
+        required: true
+      responses:
+        "201":
+          description: Successfully created order
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  Table_No:
+                    type: integer
+                    description: Customer's table number
+                  Order_ID:
+                    type: integer
+                    description: Id of the order
+                  Flavor:
+                    type: string
+                    description: Flavor of the pizza
+                  Crust:
+                    type: string
+                    description: Crust for the pizza
+                  Size:
+                    type: string
+                    description: Size of the pizza
+                  Timestamp:
+                    type: string
+                    description: Creation/Update timestamp of the order
+      x-codegen-request-body-name: order
+  /orders/{Order_ID}:
+    delete:
+      tags:
+        - Orders
+      summary: Delete an order from the orders list
+      description: Delete an order
+      operationId: orders.delete
+      parameters:
+        - name: Order_ID
+          in: path
+          description: ID of order to delete
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Successfully deleted an order
+          content: {}
+  /auth:
+    post:
+      tags:
+        - Auth
+      summary: Create an access token
+      description: Create an access token for user to login
+      operationId: auth.login
+      requestBody:
+        description: token to create
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  description: username of user
+                password:
+                  type: string
+                  description: password of user
+        required: true
+      responses:
+        "201":
+          description: Successfully created token
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                    description: access token
+      x-codegen-request-body-name: auth
+components: {}
+x-original-swagger-version: "2.0"

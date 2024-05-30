@@ -1,40 +1,42 @@
-<p align="center"><img alt= "logo" src="images/logo.png" width="200"></p>
+<p align="center">
+  <img alt="logo" src="images/logo.png" width="200">
+</p>
+
 <h1 align="center">Order Pizza API</h1>
-<h3 align="center">A RESTful API as pizza restaurant ordering system.</h3>
+<h3 align="center">A RESTful API for a pizza restaurant ordering system</h3>
 
 <h3 align="center">
-<a href="https://order-pizza-api.herokuapp.com/api/ui">Documentation </a>
-</br>
-</br>
+  <a href="https://order-pizza-api.herokuapp.com/api/ui">Documentation</a>
+</h3>
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/060895f2f997c9d08e1d#?env%5Bserver%5D=W3sia2V5IjoidXJsIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfV0=)
-
-</h1>
+<p align="center">
+  <a href="https://app.getpostman.com/run-collection/060895f2f997c9d08e1d#?env%5Bserver%5D=W3sia2V5IjoidXJsIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfV0=">
+    <img alt="Run in Postman" src="https://run.pstmn.io/button.svg">
+  </a>
+</p>
 
 Built with (but not limited to) :
-   * [connexion](https://github.com/zalando/connexion)
-   * [Flask](https://github.com/pallets/flask)
-   * [flask-marshmallow](https://github.com/marshmallow-code/flask-marshmallow)
-   * [marshmallow-sqlalchemy](https://github.com/marshmallow-code/marshmallow-sqlalchemy)
-   * [flask_jwt_extended](https://github.com/vimalloc/flask-jwt-extended)
-   * [Flask-SQLAlchemy](https://github.com/pallets/flask-sqlalchemy)
-   * [tornado](https://github.com/tornadoweb/tornado)
 
+* [connexion](https://github.com/zalando/connexion)
+* [Flask](https://github.com/pallets/flask)
+* [SQLAlchemy](https://github.com/sqlalchemy/sqlalchemy)
+* [SQLite](https://github.com/sqlite/sqlite)
+* [Marshmallow](https://github.com/marshmallow-code/marshmallow)
 
 ## Setup
 
-1. `git clone https://github.com/muhammadh-s/order-pizza-api`
+1. `git clone https://github.com/mhshahzad/order-pizza-api`
 2. `cd order-pizza-api`
-3. `pip install -r requirements.txt` 
+3. `pip install -r requirements.txt`
    _or place virtual environment and then install_
-4. `python server.py`
+4. `python3 server.py` _(tested on python 3.8.0)_
 
 ## Usage
 
 **Example Response**
 
 ```bash
-curl -s https://order-pizza-api.herokuapp.com/api/orders
+curl -s http://localhost:8000/api/orders
 ```
 
 ```json
@@ -68,11 +70,10 @@ curl -s https://order-pizza-api.herokuapp.com/api/orders
 
 **Endpoints**
 
-
-* POST : `/auth`    
+* POST : `/auth`
 
 ```bash
-  curl -X POST -H "Content-Type: application/json" -d '{"username": "test", "password": "test"}'  https://order-pizza-api.herokuapp.com/api/auth
+  curl -X POST -H "Content-Type: application/json" -d '{"username": "test", "password": "test"}'  http://localhost:8000/api/auth
 ```
 
 * POST : `/orders`  (_Access Token is required_)
@@ -89,16 +90,17 @@ curl
     "Size": "XL", 
     "Table_No": 9
   }' 
-  https://order-pizza-api.herokuapp.com/api/orders
+  http://localhost:8000/api/orders
   ```
-`Do replace the <JWT> in the above request with the token you have acquired.`
 
+`Do replace the <JWT> in the above request with the token you have acquired.`
 
 * DELETE : `/orders/{Order_ID}`
 
 ```bash
-curl -X DELETE https://order-pizza-api.herokuapp.com/api/orders/1
+curl -X DELETE http://localhost:8000/api/orders/1
 ```
 
 ## License
+
 MIT

@@ -1,8 +1,8 @@
-connexion
-Flask
-flask-marshmallow
-marshmallow-sqlalchemy
-flask_jwt_extended
-Flask-SQLAlchemy
-swagger-ui-bundle
-tornado
+connexion==2.14.2
+Flask==2.2.5
+Flask_JWT_Extended==4.6.0
+flask_marshmallow==1.2.1
+flask_sqlalchemy==3.1.1
+marshmallow-sqlalchemy==1.0.0
+SQLAlchemy==2.0.30
+connexion[swagger-ui]==2.14.2

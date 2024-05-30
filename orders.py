@@ -8,7 +8,7 @@ def read_all():
     """
     This function responds to a request for /api/orders
     with the complete lists of orders
-    :return:        json string of list of orders
+    :return:        json string of a list of orders
     """
     # Create the list of orders from our data
     orders = Orders.query.order_by(Orders.Order_ID).all()
@@ -17,6 +17,7 @@ def read_all():
     order_schema = OrderSchema(many=True)
     data = order_schema.dump(orders)
     return data
+
 
 @jwt_required
 def create(order):
@@ -62,7 +63,8 @@ def create(order):
             "Order for Table No. {table_no} exists already ".format(
                 table_no=table_no
             ),
-)
+        )
+
 
 def delete(Order_ID):
     """
@@ -86,4 +88,4 @@ def delete(Order_ID):
         abort(
             404,
             "Order not found for ID: {Order_ID}".format(Order_ID=Order_ID),
-)
+        )

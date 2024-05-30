@@ -15,7 +15,7 @@ class Orders(db.Model):
     )
 
 
-class OrderSchema(ma.ModelSchema):
+class OrderSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
         model = Orders
         ordered = True
