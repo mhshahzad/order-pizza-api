@@ -1,0 +1,32 @@
+name: Deploy OpenAPI Docs
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install redoc-cli
+        run: npm install -g redoc-cli
+
+      - name: Generate static OpenAPI docs
+        run: |
+          mkdir -p docs
+          redoc-cli bundle openapi-3.0.yml -o docs/index.html
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
