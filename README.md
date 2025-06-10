@@ -6,7 +6,7 @@
 <h3 align="center">A RESTful API for a pizza restaurant ordering system</h3>
 
 <h3 align="center">
-  <a href="https://order-pizza-api.herokuapp.com/api/ui">Documentation</a>
+  <a href="https://mhshahzad.tech/order-pizza-api/">Documentation</a>
 </h3>
 
 <p align="center">
