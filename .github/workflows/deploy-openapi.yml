@@ -23,7 +23,7 @@ jobs:
       - name: Generate static OpenAPI docs
         run: |
           mkdir -p docs
-          redoc-cli bundle openapi-3.0.yml -o docs/index.html
+          redoc-cli bundle templates/openapi-3.0.yml -o docs/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
